@@ -16,7 +16,7 @@ module Bootstrap
 
         unless sprockets_version == 4
           # sprockets-rails 4 no longer support regexes, only wildcards
-          app.config.assets.precompile << ["bootstrap/glyphicons-halflings-regular.*"]
+          app.config.assets.precompile << [root.join("fonts/bootstrap/glyphicons-halflings-regular.*")]
         end
       end
     end
